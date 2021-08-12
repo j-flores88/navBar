@@ -9,4 +9,68 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: cornflowerblue;
+    font-family: 'Lora', serif;
+}
+
+.logo {
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+ul a {
+    color: cornsilk;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: cornsilk;
+    margin: 5px;
+}
+
+@media screen and (max-width:786px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    ul {
+        position: absolute;
+        right: 10%;
+        height: 25vh;
+        top: 10vh;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .burgerDropDown {
+        visibility: visible;
+        opacity: 1;
+    }
 }

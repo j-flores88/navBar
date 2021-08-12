@@ -1,3 +1,5 @@
+import navBurgerMenu from "./navBurgerMenu";
+
 const navSection = document.querySelector('nav');
 
 const navBarGenerator = (pageTitle, titleClass, ...links) => {
@@ -8,9 +10,11 @@ const navBarGenerator = (pageTitle, titleClass, ...links) => {
     if(titleClass) navTitle.classList.add(titleClass);
 
     navSection.appendChild(navTitle);
+    navSection.appendChild(navBurgerMenu());
     navSection.appendChild(navList);
+    
 
-    const individualLink = links.forEach((link) => {
+    links.forEach((link) => {
         const newLi = document.createElement('li');
         newLi.innerHTML = `
             <a href=#>${link}</a>

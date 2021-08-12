@@ -1,3 +1,3 @@
 import navBarGenerator from "./navBarGenerator";
 
-navBarGenerator('NavBar', null, 'Home', 'About', 'Contact')
+navBarGenerator('NavBar', 'logo', 'Home', 'About', 'Contact')
