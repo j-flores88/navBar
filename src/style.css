@@ -25,7 +25,7 @@ ul li {
 
 ul {
     display: flex;
-    width: 30%;
+    width: 35%;
     justify-content: space-around;
 }
 
@@ -47,6 +47,13 @@ ul a {
     height: 3px;
     background-color: cornsilk;
     margin: 5px;
+}
+
+
+@media screen and (max-width:1024) {
+    ul {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:786px) {
