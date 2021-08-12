@@ -1,10 +1,11 @@
 const navSection = document.querySelector('nav');
 
-const navBarGenerator = (pageTitle, ...links) => {
+const navBarGenerator = (pageTitle, titleClass, ...links) => {
     const navTitle = document.createElement('div');
     const navList = document.createElement('ul');
 
     navTitle.innerText = pageTitle;
+    if(titleClass) navTitle.classList.add(titleClass);
 
     navSection.appendChild(navTitle);
     navSection.appendChild(navList);
